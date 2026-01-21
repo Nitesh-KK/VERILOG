@@ -6,8 +6,8 @@ module srff_tb;
   always #3 clk=~clk;
   initial begin
     s=0;r=0;
-    $monitor("%t: clk=%d s=%b r=%b q=%b",$time,clk,s,r,q);
-    #5 s=0;r=1
+    $monitor("%t: clk=%b s=%b r=%b q=%b",$time,clk,s,r,q);
+    #5 s=0;r=1;
     #3 s=1;r=1;
     #4 s=0;r=0;
     #5 s=1;r=0;
