@@ -1,4 +1,4 @@
-module srff(input j,clk,k,output reg q);
+module srff(input clk,j,k,output reg q);
   always @(posedge clk) begin
     case({j,k})
       2'b00: q<=q;
