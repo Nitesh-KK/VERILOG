@@ -1,14 +1,13 @@
-module mealy_o_111or000_tb;
+module meal_o_111or000_tb;
   reg clk,rst,x;
   wire y;
   wire [2:0] state,next_state;
-  mealy_o_111or000 mealy(clk,rst,x,y);
+  meal_o_111or000 mealy(clk,rst,x,y);
   always #5 clk=~clk;  
   initial begin
      clk=0;
      x=0;
      rst=0;
-   
      #10 x=1;
      #10 x=0;
      #5 rst=1;
