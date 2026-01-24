@@ -1,8 +1,8 @@
-module mealy_OL_111or000_tb;
+module mealy_o_111or000_tb;
   reg clk,rst,x;
   wire y;
   wire [2:0] state,next_state;
-  mealy_OL_111or000 mealy(clk,rst,x,y);
+  mealy_o_111or000 mealy(clk,rst,x,y);
   always #5 clk=~clk;  
   initial begin
      clk=0;
