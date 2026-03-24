@@ -18,3 +18,17 @@ module mod6_tb();
     $display("Reset=%b\t q=%d",rst,q);
   end
 endmodule 
+/*
+OUTPUT:
+Reset=1	 q=0
+Reset=0	 q=1
+Reset=0	 q=2
+Reset=0	 q=3
+Reset=0	 q=4
+Reset=0	 q=5
+Reset=0	 q=0
+Reset=0	 q=1
+Reset=0	 q=2
+Reset=0	 q=3
+Reset=0	 q=4
+*/
